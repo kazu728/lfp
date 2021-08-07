@@ -1,0 +1,51 @@
+{
+  "name": "lfp",
+  "version": "1.0.0",
+  "description": "This library support only option and result",
+  "author": "kzmat",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kzmat/lfp"
+  },
+  "bugs": "https://github.com/kzmat/lfp/issues",
+  "main": "dist/index.js",
+  "scripts": {
+    "fix:eslint": "eslint --fix --ext ts,tsx ./src",
+    "fix:prettier": "prettier --write \"./**/*.{md,json}\"",
+    "lint:eslint": "eslint --ext ts,tsx ./src",
+    "lint:prettier": "prettier --check \"./**/*.{md,json}\"",
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/eslint": "^7.2.13",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/jest": "^26.0.23",
+    "@types/prettier": "^2.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^7.0.0",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
