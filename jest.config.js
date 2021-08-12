@@ -3,6 +3,10 @@ module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   coverageDirectory: './coverage',
   coverageProvider: 'v8',
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/@types/',
+    '<rootDir>/src/index.ts',
+  ],
   moduleFileExtensions: ['ts', 'js'],
   roots: ['<rootDir>/src'],
   testEnvironment: 'node',
