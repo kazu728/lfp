@@ -10,6 +10,12 @@
   },
   "bugs": "https://github.com/kzmat/lfp/issues",
   "main": "dist/index.js",
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "fix:eslint": "eslint --fix --ext ts,tsx ./src",
     "fix:prettier": "prettier --write \"./**/*.{md,json}\"",
